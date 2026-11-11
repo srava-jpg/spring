@@ -1,0 +1,168 @@
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #26334a;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    min-height: calc(100vh - 56px);
+    border-radius: 6px;
+}
+
+.sidebar-menu {
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 12px 0;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.sidebar-menu a i {
+    margin-right: 10px;
+}
+
+.sidebar-menu a:hover {
+    background-color: #34445f;
+}
+
+.coach-card {
+    color: #26334a;
+}
+
+.search-box {
+    width: min(100%, 360px);
+}
+
+.search-box input {
+    height: 42px;
+    border-radius: 10px;
+    border-color: #dce5f3;
+}
+
+.search-icon,
+.bell-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-icon {
+    left: 15px;
+}
+
+.bell-icon {
+    right: 15px;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.stat-card {
+    height: 100%;
+    padding: 22px;
+    background-color: #f6f8fc;
+    border-radius: 14px;
+    border: 1px solid #edf0f7;
+}
+
+.stat-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    color: white;
+    font-size: 22px;
+}
+
+.stat-card h6 {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.stat-card h2 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.content-card {
+    padding: 20px;
+    background-color: #f8f9fc;
+    border-radius: 12px;
+}
+
+.profile-card {
+    padding: 15px;
+    border: 1px solid #cbdcff;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.profile-card h6 {
+    margin-bottom: 5px;
+}
+
+.job-card {
+    padding: 16px;
+    border: 1px solid #d4e1f8;
+    border-radius: 12px;
+    background-color: #ffffff;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.job-card:hover {
+    box-shadow: 0 5px 16px #00000012;
+    transform: translateY(-3px);
+}
+
+.job-icon {
+    flex-shrink: 0;
+    font-size: 38px;
+}
+
+.job-icon.react {
+    color: #61dafb;
+}
+
+.job-icon.web {
+    color: #0d6efd;
+}
+
+.job-icon.software {
+    color: #6f42c1;
+}
+
+.job-card h6 {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        min-height: auto;
+    }
+
+    main {
+        padding: 16px !important;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
